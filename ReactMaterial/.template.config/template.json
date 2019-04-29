@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Julio C. Ramos",
+    "classifications": [
+        "Web",
+        "MVC",
+        "SPA"
+    ],
+    "identity": "RamosISW.ReactMaterialTemplate.CSharp",
+    "groupIdentity": "RamosISW.ReactMaterialTemplate",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName": "ReactMaterial",
+    "preferNameDirectory": true,
+    "name": "ASP.NET Core With React.js and MaterialUI",
+    "shortName": "react-material"
+}
