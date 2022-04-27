@@ -1,13 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
-    <Version>1.0.0</Version>
+    <Version>3.1.24</Version>
+    <AssemblyVersion>$(Version).0</AssemblyVersion>
+    <FileVersion>$(Version).0</FileVersion>
     <IsPackable>true</IsPackable>
   </PropertyGroup>
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>RamosISW.Dotnet.React.Material</RootNamespace>
   </PropertyGroup>
 
@@ -33,14 +33,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="LICENSE" Pack="true" PackagePath=""/>
+    <None Include="LICENSE" Pack="true" PackagePath="" />
     <Content Remove="$(SrcRoot)**" />
-    <None Include="$(SrcRoot)**" Exclude="$(ClientAppRoot)node_modules\**;$(SrcRoot)bin\**;$(SrcRoot)obj\**" Pack="true" ContentTargetFolders=""/>
+    <None Include="$(SrcRoot)**" Exclude="$(ClientAppRoot)node_modules\**;$(SrcRoot)bin\**;$(SrcRoot)obj\**" Pack="true" ContentTargetFolders="" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.24" />
   </ItemGroup>
 
 </Project>
